@@ -1,0 +1,16 @@
+{
+  "name": "agent-portfolio",
+  "version": "1.0.0",
+  "description": "AI Agent Engineer Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

@@ -1,0 +1,64 @@
+:root {
+    --obsidian: #020202;
+    --cyan: #00F2FF;
+    --violet: #7000FF;
+    --glass: rgba(255, 255, 255, 0.05);
+}
+
+body {
+    margin: 0;
+    background: var(--obsidian);
+    color: white;
+    font-family: 'Geist', sans-serif;
+    overflow-x: hidden;
+}
+
+#agentic-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    opacity: 0; /* Animated via JS */
+    position: fixed;
+    width: 90%;
+    backdrop-filter: blur(10px);
+}
+
+.mono { font-family: 'JetBrains Mono', monospace; color: var(--cyan); }
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.headline {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: -3px;
+    margin: 20px 0;
+}
+
+.cyan-text { color: var(--cyan); text-shadow: 0 0 20px rgba(0, 242, 255, 0.5); }
+
+.btn {
+    padding: 15px 30px;
+    border: 1px solid var(--glass);
+    background: var(--glass);
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+    font-family: 'JetBrains Mono';
+}
+
+.btn.primary:hover { border-color: var(--cyan); box-shadow: 0 0 15px var(--cyan); }
